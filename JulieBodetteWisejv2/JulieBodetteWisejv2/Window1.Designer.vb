@@ -27,6 +27,11 @@ Partial Class Window1
         Me.Label2 = New Wisej.Web.Label()
         Me.Label4 = New Wisej.Web.Label()
         Me.Label6 = New Wisej.Web.Label()
+        Me.TypedTextBox1 = New Wisej.Web.TypedTextBox()
+        Me.TypedTextBox2 = New Wisej.Web.TypedTextBox()
+        Me.TypedTextBox3 = New Wisej.Web.TypedTextBox()
+        Me.TypedTextBox4 = New Wisej.Web.TypedTextBox()
+        Me.TypedTextBox5 = New Wisej.Web.TypedTextBox()
         CType(Me.DataGridView1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.TableLayoutPanel1.SuspendLayout()
         Me.SuspendLayout()
@@ -43,6 +48,11 @@ Partial Class Window1
         Me.TableLayoutPanel1.ColumnCount = 2
         Me.TableLayoutPanel1.ColumnStyles.Add(New Wisej.Web.ColumnStyle(Wisej.Web.SizeType.Percent, 15.07!))
         Me.TableLayoutPanel1.ColumnStyles.Add(New Wisej.Web.ColumnStyle(Wisej.Web.SizeType.Percent, 84.93!))
+        Me.TableLayoutPanel1.Controls.Add(Me.TypedTextBox5, 1, 4)
+        Me.TableLayoutPanel1.Controls.Add(Me.TypedTextBox4, 1, 3)
+        Me.TableLayoutPanel1.Controls.Add(Me.TypedTextBox3, 1, 2)
+        Me.TableLayoutPanel1.Controls.Add(Me.TypedTextBox2, 1, 1)
+        Me.TableLayoutPanel1.Controls.Add(Me.TypedTextBox1, 1, 0)
         Me.TableLayoutPanel1.Controls.Add(Me.Label6, 0, 4)
         Me.TableLayoutPanel1.Controls.Add(Me.Label1, 0, 0)
         Me.TableLayoutPanel1.Controls.Add(Me.Label3, 0, 3)
@@ -106,6 +116,56 @@ Partial Class Window1
         Me.Label6.TabIndex = 6
         Me.Label6.Text = "Country"
         '
+        'TypedTextBox1
+        '
+        Me.TypedTextBox1.Anchor = CType(((Wisej.Web.AnchorStyles.Top Or Wisej.Web.AnchorStyles.Left) _
+            Or Wisej.Web.AnchorStyles.Right), Wisej.Web.AnchorStyles)
+        Me.TypedTextBox1.Location = New System.Drawing.Point(69, 3)
+        Me.TypedTextBox1.Name = "TypedTextBox1"
+        Me.TypedTextBox1.Size = New System.Drawing.Size(366, 19)
+        Me.TypedTextBox1.TabIndex = 7
+        Me.TypedTextBox1.ValueType = GetType(String)
+        '
+        'TypedTextBox2
+        '
+        Me.TypedTextBox2.Anchor = CType(((Wisej.Web.AnchorStyles.Top Or Wisej.Web.AnchorStyles.Left) _
+            Or Wisej.Web.AnchorStyles.Right), Wisej.Web.AnchorStyles)
+        Me.TypedTextBox2.Location = New System.Drawing.Point(69, 28)
+        Me.TypedTextBox2.Name = "TypedTextBox2"
+        Me.TypedTextBox2.Size = New System.Drawing.Size(366, 19)
+        Me.TypedTextBox2.TabIndex = 8
+        Me.TypedTextBox2.ValueType = GetType(String)
+        '
+        'TypedTextBox3
+        '
+        Me.TypedTextBox3.Anchor = CType(((Wisej.Web.AnchorStyles.Top Or Wisej.Web.AnchorStyles.Left) _
+            Or Wisej.Web.AnchorStyles.Right), Wisej.Web.AnchorStyles)
+        Me.TypedTextBox3.Location = New System.Drawing.Point(69, 53)
+        Me.TypedTextBox3.Name = "TypedTextBox3"
+        Me.TypedTextBox3.Size = New System.Drawing.Size(366, 19)
+        Me.TypedTextBox3.TabIndex = 9
+        Me.TypedTextBox3.ValueType = GetType(String)
+        '
+        'TypedTextBox4
+        '
+        Me.TypedTextBox4.Anchor = CType(((Wisej.Web.AnchorStyles.Top Or Wisej.Web.AnchorStyles.Left) _
+            Or Wisej.Web.AnchorStyles.Right), Wisej.Web.AnchorStyles)
+        Me.TypedTextBox4.Location = New System.Drawing.Point(69, 78)
+        Me.TypedTextBox4.Name = "TypedTextBox4"
+        Me.TypedTextBox4.Size = New System.Drawing.Size(366, 19)
+        Me.TypedTextBox4.TabIndex = 10
+        Me.TypedTextBox4.ValueType = GetType(String)
+        '
+        'TypedTextBox5
+        '
+        Me.TypedTextBox5.Anchor = CType(((Wisej.Web.AnchorStyles.Top Or Wisej.Web.AnchorStyles.Left) _
+            Or Wisej.Web.AnchorStyles.Right), Wisej.Web.AnchorStyles)
+        Me.TypedTextBox5.Location = New System.Drawing.Point(69, 103)
+        Me.TypedTextBox5.Name = "TypedTextBox5"
+        Me.TypedTextBox5.Size = New System.Drawing.Size(366, 22)
+        Me.TypedTextBox5.TabIndex = 11
+        Me.TypedTextBox5.ValueType = GetType(String)
+        '
         'Window1
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(7.0!, 17.0!)
@@ -129,4 +189,9 @@ Partial Class Window1
     Friend WithEvents Label2 As Wisej.Web.Label
     Friend WithEvents Label4 As Wisej.Web.Label
     Friend WithEvents Label6 As Wisej.Web.Label
+    Friend WithEvents TypedTextBox5 As Wisej.Web.TypedTextBox
+    Friend WithEvents TypedTextBox4 As Wisej.Web.TypedTextBox
+    Friend WithEvents TypedTextBox3 As Wisej.Web.TypedTextBox
+    Friend WithEvents TypedTextBox2 As Wisej.Web.TypedTextBox
+    Friend WithEvents TypedTextBox1 As Wisej.Web.TypedTextBox
 End Class
